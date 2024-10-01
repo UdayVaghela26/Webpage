@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymZone CMS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .scrolling-wrapper {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        animation: scroll 20s linear infinite;
+    }
+    
+    @keyframes scroll {
+        0% { transform: translateX(100%); }   /* Starts outside the viewport */
+        100% { transform: translateX(-100%); } /* Moves completely off-screen */
+    }
+</style>
+
+
+
+
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-5">
+    <!-- Logo -->
+    <div class="ml-[40px] md:ml-[3px]">
+      <img src="./assets/logo.svg" class="w-[200px] h-[30px]">
+    </div>
+
+    <!-- Menu Links for Desktop and Tablets -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-orange-500">HOME</a>
+      <a href="#" class="text-white">ABOUT US</a>
+      <a href="#" class="text-white">SERVICES</a>
+      <a href="#" class="text-white">BLOG</a>
+    </div>
+
+    <!-- Join Button -->
+    <a href="#" class="hidden md:block bg-[#FF4B2B] text-white py-2 px-4 rounded-full">Join Us</a>
+
+    <!-- Hamburger menu for Mobile -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5h14a1 1 0 100-2H3a1 1 0 000 2zm0 4h14a1 1 0 100-2H3a1 1 0 000 2zm0 4h14a1 1 0 100-2H3a1 1 0 000 2zm0 4h14a1 1 0 100-2H3a1 1 0 000 2z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block text-center text-orange-500 py-2">HOME</a>
+    <a href="#" class="block text-center text-white py-2">ABOUT US</a>
+    <a href="#" class="block text-center text-white py-2">SERVICES</a>
+    <a href="#" class="block text-center text-white py-2">BLOG</a>
+    <a href="#" class="block w-full text-center bg-[#FF4B2B] text-white rounded-full py-1 px-3 mt-2">JOIN US</a>
+  </div>
+
+
+
+ 
+    <!-- Hero Section -->
+    <section class="flex flex-col md:flex-row justify-between items-center p-6 md:p-[60px] space-y-6 md:space-y-0">
+        <!-- Left Content -->
+        <div class="flex-1 space-y-2 md:space-y-6">
+            <p class="uppercase text-sm tracking-widest text-[#FDFDFD]">The Best Fitness & Workout Center</p>
+            <h1 class="text-4xl md:text-5xl font-bold">
+                FIND YOUR <span class="text-[#FF4B2B]">FIT</span> UNLEASH <br> YOUR POTENTIAL
+            </h1>
+            <p class="text-[#A2A2A2]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Pellentesque risus ante, auctor at mi elementum, cursus <br>pellentesque odio.</p>
+            <button class="bg-[#FF4B2B] text-white px-6 py-3 rounded-full hover:bg-red-600 transition">Contact Now</button>
+
+            <!-- Fitness Enthusiasts -->
+            <div class="flex items-center space-x-2">
+                <!-- Circles with images -->
+                <div class="flex -space-x-4">
+                    <img src="./assets/h1.jpg" alt="Fitness Enthusiast" class="w-[60px] h-[60px] rounded-full border-2 border-[#FF4B2B]">
+                    <img src="./assets/h2.jpg" alt="Fitness Enthusiast" class="w-[60px] h-[60px] rounded-full border-2 border-[#FF4B2B]">
+                    <img src="./assets/h3.jpg" alt="Fitness Enthusiast" class="w-[60px] h-[60px] rounded-full border-2 border-[#FF4B2B]">
+                    <img src="./assets/h4.jpg" alt="Fitness Enthusiast" class="w-[60px] h-[60px] rounded-full border-2 border-[#FF4B2B]">
+                </div>
+                <p class="text-sm text-white "><span class="font-bold text-3xl">I0K+ </span><br>Fitness Enthusiasts</p>
+            </div>
+        </div>
+
+        <!-- Right Images -->
+        <div class="flex-1 flex justify-end space-x-4">
+            <div class="space-y-4">
+                <img src="./assets/heroimg.webp" alt="">
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <div class="w-full h-[60px]  overflow-hidden bg-[#FF4B2B]">
+        <div class="scrolling-wrapper space-x-4 items-center justify-center text-[40px]">
+            <h1>MOVE IT AND LOSE IT &#9733; RESULTS, NOT PROMISES &#9733; EAT SLEEP, GYM, AND REPEAT &#9733; START WORKOUT NOW </h1>
+        </div>
+    </div>
+
+
+
+    <section class="max-w-7xl mx-auto p-6">
+      <div class="flex flex-col md:flex-row items-center md:justify-between">
+        
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+          <img src="./assets/about.webp" alt="Gym Trainers" class="rounded-md shadow-lg">
+        </div>
+  
+        <!-- Text Section -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <span class="text-4xl font-bold ">ABOUT US</span>
+          <h1 class="text-4xl font-bold uppercase mt-4">
+            Dedicated to Igniting Your
+            <span class="text-red-500">Passion</span> for Health
+          </h1>
+          <p class="text-[#A2A2A2] text-[20px] mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque <br>risus ante, auctor.
+          </p>
+          <div class="flex flex-wrap justify-center md:justify-start mt-6">
+            <div class="mr-10">
+              <h2 class="text-4xl font-bold">250+</h2>
+              <p class="text-gray-400">Team Members</p>
+            </div>
+            <div>
+              <h2 class="text-4xl font-bold">10+</h2>
+              <p class="text-gray-400">Years of Experience</p>
+            </div>
+          </div>
+          <button class="mt-8 px-6 py-3 bg-[#FF4B2B] text-white rounded-md shadow-lg hover:bg-red-600">About Us</button>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- Section: Training Programs -->
+  <section class="max-w-7xl mx-auto p-6">
+    <!-- Title and Description -->
+    <div class=" mb-10">
+      <span class="text-4xl font-bold ">SERVICES</span>
+      <h2 class="text-4xl font-bold uppercase">
+        Discover Our <span class="text-[#FF4B2B]">Training</span> Programs
+      </h2>
+      <p class="text-[#A2A2A2] mt-4 text-[20px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Pellentesque risus ante, auctor.
+      </p>
+    </div>
+
+    <!-- Image Grid Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Cardio -->
+      <div class="relative">
+        <img src="./assets/cardio.webp" alt="Cardio" class="w-full h-auto rounded-md shadow-lg object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-end">
+          <h3 class="text-5xl font-bold text-white mb-4">CARDIO</h3>
+        </div>
+      </div>
+
+      <!-- Zumba -->
+      <div class="relative">
+        <img src="./assets/zumba.webp" alt="Zumba" class="w-full h-auto rounded-md shadow-lg object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-end">
+          <h3 class="text-5xl font-bold text-[#FF4B2B] mb-4">ZUMBA</h3>
+        </div>
+      </div>
+
+      <!-- Deadlift -->
+      <div class="relative">
+        <img src="./assets/deadlift.webp" alt="Deadlift" class="w-full h-auto rounded-md shadow-lg object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-end">
+          <h3 class="text-5xl font-bold text-white mb-4">DEADLIFT</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+   <!-- Testimonial Section -->
+   <section class="max-w-7xl mx-auto p-6">
+    <!-- Title and Description -->
+    <div class="text-center mb-10">
+      <span class="text-4xl font-bold ">TESTOMONIAL</span>
+      <h2 class="text-4xl font-bold uppercase">
+        What Our <span class="text-[#FF4B2B]">Members</span> Say
+      </h2>
+      <p class="text-[#A2A2A2] mt-4 max-w-lg mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus ante, auctor.
+      </p>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      <!-- Left Image Section -->
+      <div class="relative md:w-1/2">
+        <img src="./assets/testomonial.webp" alt="Testimonial Image" class="w-full h-auto rounded-md object-cover">
+        
+        
+        
+      </div>
+
+      <!-- Right Testimonial Section -->
+      <div class="md:w-1/2 text-left space-y-6">
+        <!-- Quote Icon -->
+        <div class="text-6xl text-red-500">
+          <img src="./assets/testi2.svg" alt="">
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-[28px] ">
+          Lorem ipsum dolor sit amet consectetur. Facilisis lectus velit consequat sed id massa odio. Elit scelerisque dolor ultrices tempor.
+        </p>
+        
+        <!-- Author Information -->
+        <div class="mt-4">
+          <p class="font-bold text-white">MILLA DESAILLY</p>
+          <p class="text-gray-400">Co-Founder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-12">
+    <div class="text-center mb-10">
+      <span class="text-4xl font-bold ">PRICING</span>
+      <h1 class="text-4xl font-bold uppercase mb-4">The Perfect Plan For Your Need</h1>
+      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Pellentesque risus ante, auctor.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Basic Plan -->
+      <div class="bg-[#1A1A1A] p-8  text-center">
+        <h2 class="text-2xl font-bold text-[#FF4B2B] uppercase mb-4 text-left">Basic</h2>
+        <p class="text-4xl font-bold mb-4 text-left">$15 USD</p>
+        <p class="text-gray-400 mb-6 text-left">User / month Billed annually</p>
+        <p class="text-left">KEY FEATURES:</p>
+        <ul class="text-left space-y-4 mt-2">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Mauris vel erat in lacus porta mollis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Proin hendrerit velit in gravida hendrerit.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Aenean aliquet mi id vulputate ultrices.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Donec ornare felis ut bibendum facilisis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Cras vel urna nec risus luctus ultrices.</li>
+        </ul>
+        <button class="mt-6 bg-[#3C3C3C] py-2 px-4 rounded-lg w-full hover:bg-[#FF4B2B]">Join Now</button>
+      </div>
+      
+      <!-- Premium Plan -->
+      <div class="bg-[#1A1A1A] p-8 text-center border border-red-500">
+        <h2 class="text-2xl font-bold text-[#FF4B2B] uppercase mb-4 text-left">Premium</h2>
+        <p class="text-4xl font-bold mb-4 text-left">$49 USD</p>
+        <p class="text-gray-400 mb-6 text-left">User / month Billed annually</p>
+        <p class="text-left">KEY FEATURES:</p>
+        <ul class="text-left space-y-4 mt-2">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Proin hendrerit velit in gravida hendrerit.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Mauris vel erat in lacus porta mollis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Donec ornare felis ut bibendum facilisis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Aenean aliquet mi id vulputate ultrices.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Cras vel urna nec risus luctus ultrices.</li>
+        </ul>
+        <button class="mt-6 bg-[#3C3C3C] py-2 px-4 rounded-lg w-full hover:bg-[#FF4B2B]">Join Now</button>
+      </div>
+      
+      <!-- Enterprise Plan -->
+      <div class="bg-[#1A1A1A] p-8  text-left">
+        <h2 class="text-2xl font-bold text-[#FF4B2B] uppercase mb-4 text-left">Enterprise</h2>
+        <p class="text-4xl font-bold mb-4 text-left">$99 USD</p>
+        <p class="text-gray-400 mb-6">User / month Billed annually</p>
+        <p class="text-left">KEY FEATURES:</p>
+        <ul class="text-left space-y-4 mt-2">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Donec ornare felis ut bibendum facilisis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Cras vel urna nec risus luctus ultrices.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Proin hendrerit velit in gravida hendrerit.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Mauris vel erat in lacus porta mollis.</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Aenean aliquet mi id vulputate ultrices.</li>
+        </ul>
+        <button class="mt-6 bg-[#3C3C3C] py-2 px-4 rounded-lg w-full hover:bg-[#FF4B2B]">Join Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <!-- Section Header -->
+    <div class="text-center mb-10 ">
+      <span class="text-4xl font-bold ">BLOGS</span>
+      <h2 class="text-4xl font-bold uppercase">
+        Dive Into Our <span class="text-[#FF4B2B]">Fitness</span> Blogs
+      </h2>
+      <p class="text-gray-400 mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Pellentesque risus ante, auctor.
+      </p>
+    </div>
+
+    <!-- Blog Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      
+      <!-- Blog Card 1 -->
+      <div class="relative overflow-hidden group">
+        <img src="./assets/blog1.webp" alt="Busting Gym Myths" class="w-full h-72 ">
+        <!-- Orange Accent -->
+        <div class="absolute inset-0 bg-transparent group-hover:bg-orange-500 transition duration-300 mix-blend-multiply"></div>
+        <!-- Content -->
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-xl font-bold uppercase">Busting Gym Myths</h3>
+          <a href="#" class="text-[#FF4B2B] mt-2">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="relative overflow-hidden group">
+        <img src="./assets/blog3.webp" alt="Ditch the Fad Diets" class="w-full h-72 ">
+        <!-- Orange Accent -->
+        <div class="absolute inset-0 bg-transparent group-hover:bg-orange-500 transition duration-300 mix-blend-multiply"></div>
+        <!-- Content -->
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-xl font-bold uppercase">Ditch the Fad Diets</h3>
+          <a href="#" class="text-[#FF4B2B] mt-2">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="relative overflow-hidden group">
+        <img src="./assets/blog2.webp" alt="Building a Strong Core" class="w-full h-72">
+        <!-- Orange Accent -->
+        <div class="absolute inset-0 bg-transparent group-hover:bg-orange-500 transition duration-300 mix-blend-multiply"></div>
+        <!-- Content -->
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-xl font-bold uppercase">Building a Strong Core</h3>
+          <a href="#" class="text-[#FF4B2B] mt-2">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="py-12 max-w-6xl mx-auto px-4 space-x-5"> 
+    <div class="md:flex md:justify-between items-center">
+      
+      <!-- Form Section -->
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold uppercase mb-4">
+          Join Us <br> Let's <span class="text-red-500">Connect</span>
+        </h2>
+        <p class="text-gray-400 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at lobortis tellus.
+        </p>
+
+        <!-- Form -->
+        <form class="space-y-6">
+          <div>
+            <label for="fullName" class="block text-sm mb-2">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" class="w-full p-3 bg-black border text-white rounded-md ">
+          </div>
+          <div>
+            <label for="email" class="block text-sm mb-2">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" class="w-full p-3 bg-black border text-white rounded-md ">
+          </div>
+          <div>
+            <label for="mobileNumber" class="block text-sm mb-2">Mobile Number</label>
+            <input type="tel" id="mobileNumber" placeholder="Enter your mobile number" class="w-full p-3 bg-black border text-white rounded-md ">
+          </div>
+          <div>
+            <label for="message" class="block text-sm mb-2">Message</label>
+            <textarea id="message" rows="4" placeholder="Write your message" class="w-full p-3 bg-black border text-white rounded-md "></textarea>
+          </div>
+          <button type="submit" class="bg-[#FF4B2B] hover:bg-red-600 text-white py-3 px-6 rounded-md focus:outline-none">
+            Submit
+          </button>
+        </form>
+      </div>
+      
+      <!-- Image Section -->
+      <div class="md:w-1/2 mt-10 md:mt-0 relative flex justify-center ">
+        <div class="relative">
+          <img src="./assets/joinus.webp" alt="Fitness" class=" w-[545pc] h-[443px]">
+          
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+<footer class="bg-[#1A1A1A] text-white py-10">
+  <div class="container mx-auto px-10 flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0 md:space-x-10">
+    <!-- Left Section: Logo and Description -->
+    <div class="flex flex-col space-y-4 text-center md:text-left">
+      <div class="text-3xl font-bold">
+        <img src="./assets/logo.svg" class="w-[200px]">
+      </div>
+      <p class="text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at lobortis tellus.<br> Nam posuere at urna nec pretium.
+      </p>
+      <!-- Social Media Icons -->
+      <div class="flex justify-center md:justify-start space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle Section: Quick Links -->
+    <div class="text-center  md:text-center">
+      <h3 class="font-bold text-lg mb-4">Quick Link</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Services</a></li>
+        <li><a href="#" class="hover:text-white">Blog</a></li>
+        <li><a href="#" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Section: Support Links -->
+    <div class="text-center md:text-center">
+      <h3 class="font-bold text-lg mb-4">Support</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-white">License</a></li>
+        <li><a href="#" class="hover:text-white">Changelog</a></li>
+        <li><a href="#" class="hover:text-white">Styleguide</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Section: Copyright -->
+  <div class="container mx-auto px-4 mt-10 text-center text-gray-400">
+    <p>Powered by GYMZONE</p>
+  </div>
+</footer>
+
+
+
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

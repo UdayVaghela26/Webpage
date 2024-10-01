@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    line-height: 47px;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+#searchBar{
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border: none;
+    margin-right: 25%;
+}
+#searchicon{
+    width: 14px;
+    height: 16px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #a3a1a6;
+    margin: 3%;
+    list-style:none;
+    text-align:center ;
+}
+.hero{
+    background: url(./Assests/hero.jpg);
+    background-position: center;
+    width: 100%;
+    height: 625px;
+    background-repeat: no-repeat;
+}
+.hero p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    padding-top: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero font{
+    color: #4c4c4c;
+}
+
+.sec1{
+    margin-inline: 20%;
+    margin-top: 30px;
+    font-family: Madefor;
+    color: #4c4c4c;
+    display: flex;
+    width: 920px;
+   
+
+    margin-bottom: 20px;
+
+    }
+
+.sec1 #s1{
+    float: left;
+     width: 460px;
+    height: 345px;
+}
+.card1{
+    border: 1px solid #e7e7e7;
+    border-left: none;
+    padding: 10%;
+    float: right ;
+    width: 460px;
+    height: 345px;
+}
+#user{
+    float: left;
+}
+.card1 hr{
+    color: #e7e7e7;
+    margin-top: 10%;
+}
+.p1{
+    font-size: 12px;
+}
+.p2{
+    font-size: 12px;
+}
+.p3{
+    font-size: 26px;
+    word-spacing: 2px;
+}
+.p4{
+    font-size: 12px;
+}
+.p5{
+    float:left ;
+    font-size: 10px;
+}
+#heart{
+    float: right;
+    margin-top: 3px;
+    color: red;
+    }
+    .card1 span
+    {
+        
+        text-align: right;
+        margin-top: 0px;
+        font-size: 15px;
+        margin-left: 51.5%;
+        }
+        
+        .button{
+            margin-top: 50px;
+            margin-left: 40%;
+            
+            width: 351.4px;
+            height: 48px;
+            background-color: black;
+            border: white solid 0.800px;
+            text-align: center;
+            align-items: center;
+
+}
+        
+.button a{
+
+    text-decoration: none;
+    color: white;
+    line-height: 48px;
+    font-size: 15px;
+}
+.gallery {
+    margin-top: 30px;
+    margin-inline:17%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.gallery p{
+    margin: 15px;
+    font-size:17px ;
+    font-family: Madefor;
+    font-weight:400;
+    letter-spacing: 0.001px;
+}
+
+.gallery img{
+    width: 225px;
+    height: 225px ;
+    margin-inline:10px ;
+}
+.foot{
+    width: 100%;
+    height:328px;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+ }
+ .foot p{
+    font-size: 26px;
+    text-align: center;
+    margin-left: 40px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 120px;
+    font-family: Madefor;
+
+ }
+ .foot font{
+    font-weight:200 ;
+    
+    font-weight: lighter;
+}
+.footmain{
+    align-items: center;
+    margin-inline: 18%;
+    width: 70%;
+}
+
+
+.box1,.box2,.box3{
+    height: 110px;
+    width: 330px;
+    margin-inline: 2px;
+    float: left;
+    font-family: Madefor;
+    font-weight: lighter;
+
+}
+.box1{
+    line-height: 110px;
+    text-align: center;
+    font-size: 25px;
+}
+.box2{
+    padding-inline: 4%;
+}
+.box2 lable{
+    text-align: left;
+}
+.box2 input,button{
+    margin: 4px;
+    background-color: black;
+    color: rgb(219, 213, 213);
+    border: 2px solid rgb(219, 213, 213);
+}
+.box3{
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(219, 213, 213);
+    padding-inline: 4%;
+
+}
+.box3 a{
+    color: rgb(219, 213, 213);
+
+}
+
+
+
+
+
+
+
+  

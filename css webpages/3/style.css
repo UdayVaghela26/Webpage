@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    
+  }
+  .navbar .navlogo {
+    width: auto;
+    height: inherit;
+    float: left;
+    padding-inline: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .navbar .navlogo h1 {
+    line-height: 80px;
+    font-weight: 100;
+  }
+  .navbar .navlinks {
+    width: auto;
+    height: inherit;
+    float: left;
+    padding-left: 50%;
+  }
+  .navbar .navlinks a {
+    line-height: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding-inline: 50px;
+    padding-block: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: ;
+}
+  .navbar .navend {
+    width: auto;
+    padding-left: 20%;
+    padding-inline: 100px;
+  }
+  .navbar .navends i{
+      line-height: 80px;
+      font-size: 25px;
+      font-weight: 100;
+      color: rgb(0, 0, 0);
+      
+  }
+/* navbar */
+/* hero section */
+.heroimg{
+  background-image: url(./Assets/hero.webp);
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+}
+.heroimg h1{
+  text-align: center;
+  line-height: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+
+/* hero section */
+/* main */
+.card-main{
+  width: 100%;
+  height: 970px;
+  /* background-color: lightskyblue; */
+  padding-inline: 100px;
+  padding-block: 70px;
+}
+.card-main .card{
+  width: 32%;
+  height: 800px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 1.2%;
+}
+.card-main .card .card-top{
+  width: 100%;
+  height: 65%;
+  /* background-color: red; */
+}
+.card-main .card .card-top img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-main .card .card-center{
+  width: 100%;
+  height: 30%;
+  /* background-color: rgb(205, 24, 237); */
+  padding-inline: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.card-main .card .card-center p{
+  font-size: 14px;
+  
+}
+.card-main .card .card-center h2{
+  font-size: 26px;
+  margin-block: 8px;
+  
+}
+.card-main .card .card-bottom{
+  width: 100%;
+  height: 5%;
+  /* background-color: rgb(21, 255, 0); */
+  padding-inline: 20px;
+}
+.card-main .card .card-bottom .hr{
+  width: 100%;
+  height: 2px;
+  background-color: rgb(202, 202, 202);
+  border-radius: 90px;
+}
+.card-main .card .card-bottom i{
+  line-height: 40px;
+}
+
+/* main */
+/* card bottom */
+.card-middle{
+  width: 100%;
+  height: 970px;
+  /* background-color: lightskyblue; */
+  padding-inline: 100px;
+  padding-block: 70px;
+}
+.card-middle .card{
+  width: 32%;
+  height: 800px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 1.2%;
+}
+.card-middle .card .card-top{
+  width: 100%;
+  height: 65%;
+  /* background-color: red; */
+}
+.card-middle .card .card-top img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-middle .card .card-center{
+  width: 100%;
+  height: 30%;
+  /* background-color: rgb(205, 24, 237); */
+  padding-inline: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.card-middle .card .card-center p{
+  font-size: 14px;
+  
+}
+.card-middle .card .card-center h2{
+  font-size: 26px;
+  margin-block: 8px;
+  
+}
+.card-middle .card .card-bottom{
+  width: 100%;
+  height: 5%;
+  /* background-color: rgb(21, 255, 0); */
+  padding-inline: 20px;
+}
+.card-middle .card .card-bottom .hr{
+  width: 100%;
+  height: 2px;
+  background-color: rgb(202, 202, 202);
+  border-radius: 90px;
+}
+.card-middle .card .card-bottom i{
+  line-height: 40px;
+}
+/* footer */
+.foot{
+  background-color: black;
+  width: 100%;
+}
+.foot .text{
+  margin-top: 1.3%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+}
+.foot .box2{
+  margin-top: 1.3%;
+  text-align: center;
+  color: rgb(255, 250, 250);
+  font-size: large;
+}
+.foot .footend{
+  margin-top: 5%;
+  text-align: center ;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/* footer */

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CraatorTalk</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1D1D1D]">
+
+
+  <!-- Navbar -->
+<nav class="bg-[#1D1D1D] shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="#" class="text-[25px] font-medium text-white">Creator<span class="font-bold">Talk</span></a>
+      </div>
+      
+      <!-- Hamburger Menu for Mobile (hidden on larger screens) -->
+      <div class="flex items-center md:hidden">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg class="w-6 h-6 text-white border rounded-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Links (hidden on mobile, shown on larger screens) -->
+      <div class="hidden md:flex space-x-5 items-center">
+        <a href="#" class="text-white hover:text-[#35F39A] px-3 py-2 rounded-md text-sm font-medium" data-aos="fade-left">Episodes</a>
+        <a href="#" class="text-white hover:text-[#35F39A] px-3 py-2 rounded-md text-sm font-medium" data-aos="fade-left" data-aos-delay="100">Blog</a>
+        <a href="#" class="text-white hover:text-[#35F39A] px-3 py-2 rounded-md text-sm font-medium" data-aos="fade-left" data-aos-delay="200">About</a>
+        <a href="#" class="text-white hover:text-[#35F39A] px-3 py-2 rounded-md text-sm font-medium" data-aos="fade-left" data-aos-delay="300">Sponsors</a>
+        <a href="#" class="text-white hover:text-[#35F39A] px-3 py-2 rounded-md text-sm font-medium" data-aos="fade-left" data-aos-delay="400">Contact</a>
+        <button class="bg-[#35F39A] text-black font-bold py-2 px-8 rounded" data-aos="fade-up">Episodes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobile-menu" class="md:hidden hidden h-[200px]">
+    <a href="#" class="block text-white px-4 py-2 text-sm">Home</a>
+    <a href="#" class="block text-white px-4 py-2 text-sm">About</a>
+    <a href="#" class="block text-white px-4 py-2 text-sm">Services</a>
+    <a href="#" class="block text-white px-4 py-2 text-sm">Contact</a>
+    <button class="bg-[#35F39A] text-black font-bold py-2 px-4 rounded mx-2">Episodes</button>
+  </div>
+</nav>
+
+
+
+
+  <section class="bg-[#1D1D1D] py-6" ></section>
+    <div class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center">
+      
+      <!-- Text Section -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h1 class="text-4xl sm:text-4xl md:text-5xl  text-white mb-4">
+          Delivering the Latest News Right to Your Inbox
+        </h1>
+        <p class="text-[#35F39A] sm:text-xl text-[#35F39A] mb-6">
+          The #1 Podcast for Creators & Creatives.
+          <br> We cover the latest & greatest News from the Creative Field.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-6">
+          <a href="#" class="bg-[#35F39A] text-black py-2 px-4 rounded hover:bg-blue-700">Apple Podcasts</a>
+          <a href="#" class="bg-[#35F39A] text-black py-2 px-4 rounded hover:bg-gray-800">YouTube</a>
+        </div>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-2">
+            
+          <a href="#" class="bg-gray-300 text-gray-800 py-2 px-3 rounded">SoundCloud</a>
+          <a href="#" class="bg-gray-300 text-gray-800 py-2 px-3 rounded">Spotify</a>
+          <a href="#" class="bg-gray-300 text-gray-800 py-2 px-3 rounded">Google Podcasts</a>
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+        <img src="./assets/hero.jpg" alt="Podcast Image" class="w-full rounded-lg shadow-lg">
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section class=" mt-10 py-12 px-8  bg-[#313131]">
+    <!-- Heading -->
+    <div class=" mb-8">
+        <span class="bg-[#35F39A] text-black px-3 py-1  uppercase text-sm font-semibold">Latest Episodes</span>
+        <h2 class="text-4xl font-bold mt-4 text-white">Listen to our newest Episodes</h2>
+    </div>
+
+    <!-- Episode Cards Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Episode 1 -->
+        <div class="bg-[#1D1D1D] rounded-lg p-6">
+            <img class="rounded-lg mb-4" src="./assets/ep1.png" alt="Episode 1 Image">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-xl text-white font-semibold">Episode 1</span>
+                <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Creative</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">We found an AMAZING Creative Tool to boost your Workflow</h3>
+            <p class="text-gray-400 mb-4 text-[#6B6B6B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae dui vel enim ornare rhoncus.</p>
+            <a href="#" class="text-white hover:underline border-b-2 border-b-[#35F39A]">Listen to Episode</a>
+        </div>
+
+        <!-- Episode 2 -->
+        <div class="bg-[#1D1D1D] rounded-lg p-6">
+            <img class="rounded-lg mb-4" src="./assets/ep2.png" alt="Episode 2 Image">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-xl text-white font-semibold">Episode 2</span>
+                <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Technology</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">Will AI change the way creatives work?</h3>
+            <p class="text-gray-400 mb-4 text-[#6B6B6B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="text-white hover:underline border-b-2 border-b-[#35F39A]">Listen to Episode</a>
+        </div>
+
+        <!-- Episode 3 -->
+        <div class="bg-[#1D1D1D] rounded-lg p-6">
+            <img class="rounded-lg mb-4" src="./assets/ep3.jpg" alt="Episode 3 Image">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-xl text-white font-semibold">Episode 3</span>
+                <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Creative</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">We talked with an awesome Creator</h3>
+            <p class="text-gray-400 mb-4 text-[#6B6B6B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="text-white hover:underline border-b-2 border-b-[#35F39A]">Listen to Episode</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-[#383838] py-12 px-4">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+      <!-- Text Block -->
+      <div class="lg:w-1/2 lg:pr-12">
+          <span class="bg-[#35F39A] text-black px-3 py-1 uppercase text-sm font-semibold">About Our Show</span>
+          <h2 class="text-6xl font-bold mt-4 text-white">We talk about the latest News from the Creative Space.</h2>
+          <p class="text-[#DDDDDD] mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      </div>
+
+      <!-- Image Block -->
+      <div class="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 relative">
+          
+          <img src="./assets/about.jpg" alt="Podcast Host Image" class="relative rounded-lg shadow-lg">
+      </div>
+  </div>
+</section>
+
+<section class="bg-[#1D1D1D] py-8">
+  <div class="container mx-auto px-4">
+      <h2 class="text-white text-[44px] font-bold  text-center mb-8">Our Sponsors</h2>
+      <div class="flex flex-wrap items-center justify-center space-x-20 space-y-4 md:space-y-0 ">
+          <div class="flex justify-center">
+              <img src="./assets/sponsor1.svg" alt="Sponsor 1" class="h-[40px] w-[203px]">
+          </div>
+          <div class="flex justify-center">
+              <img src="./assets/sponsor2.svg" alt="Sponsor 2" class="h-[40px] w-[219px]">
+          </div>
+          <div class="flex justify-center">
+              <img src="./assets/sponsor3.svg" alt="Sponsor 3" class="h-[41px] w-[171px]">
+          </div>
+          <div class="flex justify-center">
+              <img src="./assets/sponsor4.svg" alt="Sponsor 4" class="h-[41px] w-[168px]">
+          </div>
+          <div class="flex justify-center">
+              <img src="./assets/sponsor5.svg" alt="Sponsor 5" class="h-[57px] w-[151px]">
+          </div>
+      </div>
+  </div>
+</section>
+
+    <section class="py-10 bg-[#313131]">
+        <div class="container mx-auto text-center">
+          <span class="bg-[#35F39A] text-black px-3 py-1 uppercase text-sm font-semibold">OUR AMAZING TEAM</span>
+            <h2 class="text-5xl font-bold mb-6 text-white">Meet our amazing Team</h2>
+            <p class="text-lg text-[#DDDDDD] mb-12">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim<br> in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor <br>interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:grid-cols-4 px-6 md:px-0 gap-2">
+                <!-- Team Member 1 -->
+                <div class="bg-[#1D1D1D] p-4 mx-5 rounded-lg hover:border-white">
+                    <img class="mx-auto rounded-full mb-4" src="./assets/team1.png" alt="Selene March">
+                    <h3 class="text-xl font-semibold text-white">Selene March</h3>
+                    <p class="text-white">Manager</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-[#1D1D1D] p-6 mx-5 rounded-lg">
+                    <img class="mx-auto rounded-full mb-4" src="./assets/team2.png" alt="Russel Doe">
+                    <h3 class="text-xl font-semibold text-white">Russel Doe</h3>
+                    <p class="text-white">Creative Director</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-[#1D1D1D] p-6 mx-5 rounded-lg">
+                    <img class="mx-auto rounded-full mb-4" src="./assets/team3.png" alt="Maya Richbell">
+                    <h3 class="text-xl font-semibold text-white">Maya Richbell</h3>
+                    <p class="text-white">Co-Host</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-[#1D1D1D] p-6 mx-5 rounded-lg">
+                    <img class="mx-auto rounded-full mb-4" src="./assets/team4.png" alt="Jonathan May">
+                    <h3 class="text-xl font-semibold text-white">Jonathan May</h3>
+                    <p class="text-white">Host</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+  <!-- Latest Articles Section -->
+  <section class="px-4 py-10 bg-[#383838]">
+    <div class=" mb-8">
+      <span class="bg-[#35F39A] text-black px-3 py-1 uppercase text-sm font-semibold">Our latest Articles</span>
+      <h2 class="large-heading font-bold mt-2 text-white text-4xl">Check out the latest News</h2>
+    </div>
+
+    <div class="container mx-auto">
+      <!-- Article cards -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card 1 -->
+        <div class="bg-[#1D1D1D] p-6 rounded-lg shadow-lg">
+          <img src="./assets/news1.jpg" alt="Article Image" class="w-full h-40 object-cover mb-4 rounded-lg">
+          <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Creative</span>
+          <h3 class="text-3xl font-semibold mt-2 text-white">How to properly bill your clients</h3>
+          <p class="text-[#7F7F7F] mt-2">Beatae fugiat facere et sed. Rerum voluptatibus voluptatem accusantium accusantium voluptatem error alias pos.</p>
+          <a href="#" class="text-white mt-4 block ">Read Article</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#1D1D1D] p-6 rounded-lg shadow-lg">
+          <img src="./assets/news2.jpg" alt="Article Image" class="w-full h-40 object-cover mb-4 rounded-lg">
+          <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Technology</span>
+          <h3 class="text-3xl font-semibold mt-3 text-white">Should you become a UI Designer in 2023?</h3>
+          <p class="text-[#7F7F7F] mt-2">A dolor tempore dolores beatae vel. Tempora voluptatem repudiandae quod quaerat saepe perferendis. Ipsa iste repreh.</p>
+          <a href="#" class="text-white mt-4 block ">Read Article</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#1D1D1D] p-6 rounded-lg shadow-lg">
+          <img src="./assets/news3.jpg" alt="Article Image" class="w-full h-40 object-cover mb-4 rounded-lg">
+          <span class="text-white text-[16px] font-bold border border-[#35F39A] px-5 py-2 rounded-[5px]">Creative</span>
+          <h3 class="text-3xl font-semibold mt-2 text-white">10 Books you should read before starting your freelance career</h3>
+          <p class="text-[#7F7F7F] mt-2">Est aut ab at. Facilis quasi veritatis necessitatibus. Officiis inventore ipsam consequuntur est consequatur assumenda iusto in.</p>
+          <a href="#" class="text-white mt-4 block">Read Article</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class=" bg-[#313131] flex flex-col md:flex-row items-center justify-center px-6 py-10 md:py-20 text-white">
+    <!-- Left: Image -->
+    <div class="md:w-1/2 w-full mb-8 md:mb-0 flex justify-center md:justify-end">
+      <img class="rounded-lg max-w-full h-auto" src="./assets/about2.webp" alt="Podcast host">
+    </div>
+    
+    <!-- Right: Text Content -->
+    <div class="md:w-1/2 w-full text-center md:text-left">
+      <div class="bg-[#313131] p-6 rounded-lg">
+        <span class="text-sm text-green-300 font-bold">ABOUT THE HOST</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Hey! I'm Maya.</h2>
+        <p class="text-gray-400 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.
+        </p>
+        <ul class="text-gray-400 list-disc list-inside space-y-2">
+          <li>We talk about amazing topics.</li>
+          <li>Our creative talks can elevate your ideas.</li>
+          <li>We are creative professionals that talk facts.</li>
+        </ul>
+        <a href="#" class="inline-block mt-6 px-6 py-3 bg-green-500 text-gray-900 rounded-lg font-semibold hover:bg-green-400">About our Podcast</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonial Section -->
+  <section class="bg-[#383838] flex flex-col items-center justify-center min-h-screen px-4 md:px-0">
+    <div class="max-w-3xl w-full p-6 bg-[#222222] border rounded-lg shadow-lg relative">
+        <!-- Testimonial Slider -->
+        <div class="flex items-center justify-between">
+            <button class="bg-[#222222] border p-2 rounded-full text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            
+            <div class="flex-1 mx-8">
+                <!-- Testimonial Content -->
+                <div class="text-center">
+                    <div class="text-yellow-400 flex justify-center mb-2">
+                        <!-- Stars -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26 6.91 1-5 4.87L17.18 22 12 18.27 6.82 22 8 14.13l-5-4.87 6.91-1L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26 6.91 1-5 4.87L17.18 22 12 18.27 6.82 22 8 14.13l-5-4.87 6.91-1L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26 6.91 1-5 4.87L17.18 22 12 18.27 6.82 22 8 14.13l-5-4.87 6.91-1L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26 6.91 1-5 4.87L17.18 22 12 18.27 6.82 22 8 14.13l-5-4.87 6.91-1L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26 6.91 1-5 4.87L17.18 22 12 18.27 6.82 22 8 14.13l-5-4.87 6.91-1L12 2z"/></svg>
+                    </div>
+                    <p class="text-lg italic mb-4 text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."</p>
+                    <h3 class="font-bold text-xl text-white">Jonathan More</h3>
+                    <span class="text-gray-400 text-sm text-[#383838]">CEO, Logoipsum</span>
+                </div>
+            </div>
+
+            <button class="bg-[#222222] border p-2 rounded-full text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    
+
+    <!-- Pagination Dots -->
+    <div class="mt-4 flex space-x-2">
+        <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-700 rounded-full"></span>
+    </div>
+</section>
+
+<!-- Podcast Section -->
+<section class="text-center py-12 bg-[#383838]">
+  <span class="bg-[#35F39A] text-black px-3 py-1 uppercase text-sm font-semibold">LISTEN TO US</span>
+    <h2 class="text-5xl font-bold mb-6 mt-2 text-white">Find us on all the popular Sites</h2>
+    <p class="text-[#999999] mb-8">Our podcast is available on a growing number of platforms. Listen on your<br> preferred app to get the best experience.</p>
+    <!-- Platforms Links -->
+    <div class="flex flex-wrap justify-center gap-10">
+        <a href="#" class="text-[#35F39A] px-6 py-3 border border-[#35F39A] rounded-lg shadow hover:bg-green-500 text-white">Apple Podcasts</a>
+        <a href="#" class="text-[#35F39A] px-6 py-3 border border-[#35F39A] rounded-lg shadow hover:bg-green-500 text-white">Spotify</a>
+        <a href="#" class="text-[#35F39A] px-6 py-3 border border-[#35F39A] rounded-lg shadow hover:bg-green-500 text-white">YouTube</a>
+        <a href="#" class="text-[#35F39A] px-6 py-3 border border-[#35F39A] rounded-lg shadow hover:bg-green-500 text-white">SoundCloud</a>
+        <a href="#" class="text-[#35F39A] px-6 py-3 border border-[#35F39A] rounded-lg shadow hover:bg-green-500 text-white">Google Podcasts</a>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-[#1D1D1D] text-white py-10">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+      <!-- Main Footer -->
+      <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+          <!-- Logo and Info -->
+          <div class="mb-8 md:mb-0">
+              <h1 class="text-3xl font-bold">Creator<span class="text-green-500">Talk</span></h1>
+              <p class="text-[#999999] mt-2">
+                  We provide weekly News & Updates of what's happening in the Creative Industry.
+              </p>
+          </div>
+          
+          <!-- Footer Links -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-20 text-sm">
+              <!-- Website Links -->
+              <div>
+                  <h3 class="font-bold mb-4">Website</h3>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="text-green-500 hover:text-green-400">Home</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Episodes</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Sponsors</a></li>
+                      <li><a href="#" class="hover:text-gray-400">About</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+                  </ul>
+              </div>
+              
+              <!-- Episodes Links -->
+              <div>
+                  <h3 class="font-bold mb-4">Episodes</h3>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-400">Technology</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Creativity</a></li>
+                      <li><a href="#" class="hover:text-gray-400">News</a></li>
+                  </ul>
+              </div>
+
+              <!-- Blog Links -->
+              <div>
+                  <h3 class="font-bold mb-4">Blog</h3>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-400">A.I.</a></li>
+                      <li><a href="#" class="hover:text-gray-400">News</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Technology</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Creative</a></li>
+                  </ul>
+              </div>
+
+              <!-- Admin Links -->
+              <div>
+                  <h3 class="font-bold mb-4">Admin</h3>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-400">Style Guide</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Licenses</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Changelog</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm text-gray-400 mb-4 md:mb-0">
+              Made by <a href="#" class="text-green-500 hover:text-green-400">Flowversity</a>
+          </p>
+
+          
+      </div>
+  </div>
+</footer>
+
+
+  <!-- JavaScript for the hamburger menu -->
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
