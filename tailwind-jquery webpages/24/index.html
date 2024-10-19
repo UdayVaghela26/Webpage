@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .faq-answer {
+    display: none;
+  }
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  
+</style>
+<body class="bg-[#101211] text-white">
+  <!-- Navbar -->
+  <nav class="w-full flex items-center justify-between p-4 bg-[#101211]">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4">
+      <img src="./assets/logo.svg" alt="Torch Logo" class="h-6">
+      
+    </div>
+
+    <!-- Links (Hidden on Mobile) -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-gray-400">Features</a>
+      <a href="#" class="hover:text-gray-400">Pricing</a>
+      <a href="#" class="hover:text-gray-400">About</a>
+      <a href="#" class="hover:text-gray-400">Contact</a>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex space-x-4">
+      <button class="hidden md:block bg-[#232524] text-white px-4 py-2 rounded">Sign in</button>
+      <button class="bg-[#FFC44D] text-black px-4 py-2 rounded">Get started</button>
+    </div>
+
+    <!-- Mobile Menu Icon -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white text-2xl">
+        <i class="ri-menu-3-fill"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 mt-4">
+    <a href="#" class="hover:text-gray-400">Features</a>
+    <a href="#" class="hover:text-gray-400">Pricing</a>
+    <a href="#" class="hover:text-gray-400">About</a>
+    <a href="#" class="hover:text-gray-400">Contact</a>
+    <button class="bg-[#232524] text-white px-4 py-2 rounded">Sign in</button>
+  </div>
+
+  
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row justify-between items-center lg:items-start px-6 py-12 lg:py-20 space-y-12 lg:space-y-0 lg:space-x-12">
+
+      <!-- Left Side - Text Content -->
+      <div class="lg:w-1/2">
+          <h1 class="text-6xl lg:text-7xl font-bold text-white leading-tight lg:mt-8">
+              Powerful data insights <span class="text-yellow-500">for all</span>
+          </h1>
+          <p class="text-lg lg:text-xl mt-8 text-gray-400">
+              Torch makes data analysis easy for everyone. Visualise key metrics, <br>track performance, and discover trends without needing a data science background.
+          </p>
+          <div class="mt-8 space-x-4">
+              <a href="#" class="bg-[#FFC44D] text-black py-3 px-6 rounded-lg font-semibold">Get started</a>
+              <a href="#" class="bg-[#232524] py-3 px-6 rounded-lg font-semibold">Learn more</a>
+          </div>
+      </div>
+
+      <!-- Right Side - Single Image -->
+      <div class="lg:w-1/2 flex justify-center">
+          <!-- Replace src with your image path -->
+          <img src="./assets/heroimg.avif" alt="Data Insights Image" class="w-full h-auto rounded-lg">
+      </div>
+
+  </section>
+
+
+  <div class="container mx-auto p-6">
+    <!-- Heading Section -->
+    <div class="text-center mb-12">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200">Take action from <span class="text-yellow-400">insights</span></h1>
+    </div>
+
+    <!-- Card Section -->
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+
+        <!-- Card 1: Easy-to-use dashboards -->
+        <div class="bg-[#171918] p-6 rounded-lg">
+            <div class="mb-4 text-yellow-400">
+                <!-- Icon Placeholder -->
+                <span class="text-4xl"><img src="./assets/icon1.svg" alt=""></span>
+            </div>
+            <h2 class="text-xl font-semibold mb-4">Easy-to-use dashboards</h2>
+            <p class="text-gray-400">Create intuitive, custom dashboards to visualize your most important metrics. No coding or technical skills required.</p>
+        </div>
+
+        <!-- Card 2: Real-time data updates -->
+        <div class="bg-[#171918] p-6 rounded-lg">
+            <div class="mb-4 text-yellow-400">
+                <span class="text-4xl"><img src="./assets/icon2.svg" alt=""></span>
+            </div>
+            <h2 class="text-xl font-semibold mb-4">Real-time data updates</h2>
+            <p class="text-gray-400">Get the latest insights with real-time data refreshes. Stay on top of changes as they happen, keeping your team informed.</p>
+        </div>
+
+        <!-- Card 3: Collaborative analytics -->
+        <div class="bg-[#171918] p-6 rounded-lg">
+            <div class="mb-4 text-yellow-400">
+                <!-- Icon Placeholder -->
+                <span class="text-4xl"><img src="./assets/icon4.svg" alt=""></span>
+            </div>
+            <h2 class="text-xl font-semibold mb-4">Collaborative analytics</h2>
+            <p class="text-gray-400">Share dashboards and reports with your team for seamless collaboration. Comment, edit, and review data insights together.</p>
+        </div>
+
+        <!-- Card 4: Automated reports -->
+        <div class="bg-[#171918] p-6 rounded-lg">
+            <div class="mb-4 text-yellow-400">
+                <!-- Icon Placeholder -->
+                <span class="text-4xl"><img src="./assets/icon3.svg" alt=""></span>
+            </div>
+            <h2 class="text-xl font-semibold mb-4">Automated reports</h2>
+            <p class="text-gray-400">Set up automated reports to be delivered directly to your inbox. Save time and focus on making decisions, not creating reports.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!-- Section: Chart and Info -->
+    <section class="flex flex-col items-center justify-center min-h-screen px-4 md:px-16 lg:px-32">
+        <div class="text-center mb-8">
+            <p class="text-yellow-400 text-sm mb-2">Data at your fingertips</p>
+            <h1 class="text-3xl md:text-4xl font-semibold">Real-time insights for faster decisions</h1>
+        </div>
+
+        <!-- Chart Image -->
+        <div class="w-full max-w-7xl">
+            <img src="./assets/chart.avif">
+        </div>
+
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 ">
+            <!-- Feature 1: Instant updates -->
+            <div>
+                <img src="./assets/icon5.svg" alt="">
+                <h3 class="text-lg font-semibold mt-2">Instant updates</h3>
+                <p class="text-gray-400 mt-2">Always stay up-to-date with live data flowing directly into your dashboard. Track changes as they happen.</p>
+            </div>
+
+            <!-- Feature 2: Customisable views -->
+            <div>
+                <img src="./assets/icon6.svg" alt="">
+                <h3 class="text-lg font-semibold mt-2">Customisable views</h3>
+                <p class="text-gray-400 mt-2 ">Tailor your dashboard to show the metrics that matter most. Create multiple views for different team members or purposes.</p>
+            </div>
+
+            <!-- Feature 3: Collaborative tools -->
+            <div>
+                <img src="./assets/icon7.svg" alt="">
+                <h3 class="text-lg font-semibold mt-2">Collaborative tools</h3>
+                <p class="text-gray-400 mt-2">Easily share your insights with the team. Comment, edit, and collaborate on reports without leaving the platform.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Section: Chart and Info -->
+        <section class="flex flex-col items-center mt-8 justify-center min-h-screen px-4 md:px-16 lg:px-32">
+            <div class="text-center mb-8">
+                <p class="text-yellow-400 text-sm mb-2">Actionable Insights</p>
+                <h1 class="text-3xl md:text-4xl font-semibold">Turn complex data into simple decisions</h1>
+            </div>
+    
+            <!-- Chart Image -->
+            <div class="w-full max-w-7xl">
+                <img src="./assets/chart2.avif" alt="Complex data insights chart" class="w-full h-auto rounded-md shadow-lg">
+            </div>
+    
+            <!-- Features Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 ">
+                <!-- Feature 1: Automated reports -->
+                <div>
+                    <img src="./assets/icon3.svg" alt="">
+                    <h3 class="text-lg font-semibold mt-2">Automated reports</h3>
+                    <p class="text-gray-400 mt-2">Save time with automated, scheduled reports. Get the insights you need, delivered straight to your inbox.</p>
+                </div>
+    
+                <!-- Feature 2: Trend analysis -->
+                <div>
+                    <img src="./assets/icon8.svg" alt="">
+                    <h3 class="text-lg font-semibold mt-2">Trend analysis</h3>
+                    <p class="text-gray-400 mt-2">Discover patterns and trends in your data effortlessly. Visualize historical data to forecast future performance.</p>
+                </div>
+    
+                <!-- Feature 3: Interactive charts -->
+                <div>
+                    <img src="./assets/icon9.svg" alt="">
+                    <h3 class="text-lg font-semibold mt-2">Interactive charts</h3>
+                    <p class="text-gray-400 mt-2">Dive deeper into your data with interactive charts. Hover and click for more detailed insights and breakdowns.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="py-12 px-4 lg:px-20">
+            <h2 class="text-4xl font-semibold text-center text-gray-200 mb-12">
+              Kind words from <span class="text-yellow-500">customers</span>
+            </h2>
+        
+            <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <!-- Card 1 -->
+              <div class="bg-[#171918] p-6 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold mb-4">SOMEDAY</h3>
+                <p class="mb-6">Torch completely transformed how we track our business performance. The real-time insights have helped us make faster, smarter decisions!</p>
+                <div class="flex items-center">
+                  <img class="w-[80px] h-[80px] rounded-[5px] mr-4" src="./assets/customer1.avif" alt="Emily Chang">
+                  <div>
+                    <p class="font-semibold">Emily Chang</p>
+                    <p class="text-sm text-gray-400">Luminate</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 2 -->
+              <div class="bg-[#171918] p-6 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold mb-4">n•a</h3>
+                <p class="mb-6">Our team loves how easy Torch is to use. The custom dashboards give us exactly the data we need, all in one place.</p>
+                <div class="flex items-center">
+                  <img class="w-[80px] h-[80px] rounded-[5px] mr-4" src="./assets/customer2.avif" alt="Xavier Carter">
+                  <div>
+                    <p class="font-semibold">Xavier Carter</p>
+                    <p class="text-sm text-gray-400">Cucumber</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 3 -->
+              <div class="bg-[#171918] p-6 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold mb-4">IRENE</h3>
+                <p class="mb-6">Torch seamlessly integrated with our existing tools, making data management so much more efficient. It’s become an essential part of our workflow.</p>
+                <div class="flex items-center">
+                  <img class="w-[80px] h-[80px] rounded-[5px] mr-4" src="./assets/customer3.avif" alt="Alexander Patel">
+                  <div>
+                    <p class="font-semibold">Alexander Patel</p>
+                    <p class="text-sm text-gray-400">Vexa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+
+          <div class="max-w-3xl mx-auto p-6 ">
+            <h1 class="text-5xl font-bold text-center text-gray-100 mb-10">FAQs</h1>
+            <p class="text-center text-gray-400 mb-10">Answers to questions you might have about Torch.</p>
+        
+            <!-- FAQ Item 1 -->
+            <div class="faq-item bg-[#171918] p-6 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                <h2 class="text-xl font-medium">What does Torch do?</h2>
+                <span class="text-yellow-400 text-2xl font-bold transform transition-transform duration-200">+</span>
+              </div>
+              <div class="faq-answer mt-4 text-gray-300">
+                <p>Torch is a data analytics platform that helps businesses track, visualise, and optimise their performance metrics in real-time. It enables teams to make data-driven decisions through customisable dashboards and powerful insights.</p>
+              </div>
+            </div>
+        
+            <!-- FAQ Item 2 -->
+            <div class="faq-item bg-[#171918] mt-2 p-6 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                <h2 class="text-xl font-medium">Who is Torch for?</h2>
+                <span class="text-yellow-400 text-2xl font-bold transform transition-transform duration-200">+</span>
+              </div>
+              <div class="faq-answer mt-4 text-gray-300">
+                <p>Torch is for [target audience details].</p>
+              </div>
+            </div>
+        
+            <!-- FAQ Item 3 -->
+            <div class="faq-item bg-[#171918] mt-2 p-6 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                <h2 class="text-xl font-medium">How secure is my data on Torch?</h2>
+                <span class="text-yellow-400 text-2xl font-bold transform transition-transform duration-200">+</span>
+              </div>
+              <div class="faq-answer mt-4 text-gray-300">
+                <p>Your data is secure because [security details].</p>
+              </div>
+            </div>
+        
+            <!-- FAQ Item 4 -->
+            <div class="faq-item bg-[#171918] mt-2 p-6 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                <h2 class="text-lg font-medium">Can Torch integrate with existing tools?</h2>
+                <span class="text-yellow-400 text-2xl font-bold transform transition-transform duration-200">+</span>
+              </div>
+              <div class="faq-answer mt-4 text-gray-300">
+                <p>Torch can integrate with [tool integration details].</p>
+              </div>
+            </div>
+        
+            <!-- FAQ Item 5 -->
+            <div class="faq-item bg-[#171918] mt-2 p-6 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                <h2 class="text-xl font-medium">Is Torch easy to use if you’re not technical?</h2>
+                <span class="text-yellow-400 text-2xl font-bold transform transition-transform duration-200">+</span>
+              </div>
+              <div class="faq-answer mt-4 text-gray-300">
+                <p>Yes, Torch is designed for non-technical users with [ease of use details].</p>
+              </div>
+            </div>
+          </div>
+
+          <footer class="bg-black text-white py-8">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+              <!-- Product Section -->
+              <div>
+                <h3 class="font-semibold mb-4">Product</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Sign in</a></li>
+                </ul>
+              </div>
+          
+              <!-- Company Section -->
+              <div>
+                <h3 class="font-semibold mb-4">Company</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+              </div>
+          
+              <!-- Social Section -->
+              <div>
+                <h3 class="font-semibold mb-4">Social</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">X (Twitter)</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                </ul>
+              </div>
+          
+              <!-- Admin Section -->
+              <div>
+                <h3 class="font-semibold mb-4">Admin</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Style guide</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Licenses</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Password</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">404</a></li>
+                </ul>
+              </div>
+          
+              <!-- Important Section -->
+              <div>
+                <h3 class="font-semibold mb-4">Important</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Site by Bryn Taylor</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">View all templates</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Powered by Webflow</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <!-- Footer Bottom -->
+            <div class="container mx-auto text-center mt-8">
+              <p class="text-gray-400">&copy; Torch 2024</p>
+            </div>
+          </footer>
+               
+
+  <!-- Script to toggle mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+     <script>
+      function toggleFAQ(element) {
+        const parent = element.parentElement;
+        parent.classList.toggle('open');
+  
+        const icon = parent.querySelector('span');
+        icon.textContent = parent.classList.contains('open') ? '-' : '+';
+      }
+    </script>
+</body>
+</html>
