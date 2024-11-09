@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>zeal consult</title>
+</head>
+<body class="bg-[#203050] text-white">
+  <header class="p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo Section -->
+        <div class="flex items-center space-x-2">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+
+        <!-- Navigation Links (hidden on mobile) -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-300 hover:text-lime-400">Home</a>
+            <a href="#" class="text-gray-300 hover:text-lime-400">Services</a>
+            <a href="#" class="text-gray-300 hover:text-lime-400">About</a>
+            <a href="#" class="text-gray-300 hover:text-lime-400">Blogs</a>
+            <a href="#" class="text-gray-300 hover:text-lime-400">Contact</a>
+        </nav>
+
+        <!-- Get in Touch Button (hidden on mobile) -->
+        <div class="hidden md:block">
+            <a href="#" class="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-blue-900 transition">Get in Touch</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 mt-4">
+        <a href="#" class="text-gray-300 hover:text-lime-400">Home</a>
+        <a href="#" class="text-gray-300 hover:text-lime-400">Services</a>
+        <a href="#" class="text-gray-300 hover:text-lime-400">About</a>
+        <a href="#" class="text-gray-300 hover:text-lime-400">Blogs</a>
+        <a href="#" class="text-gray-300 hover:text-lime-400">Contact</a>
+        <a href="#" class="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-blue-900 transition">Get in Touch</a>
+    </div>
+</header>
+
+<section class="px-6 py-16">
+  <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-4">
+          <h4 class="text-[#BDE162] uppercase tracking-wide font-semibold text-xl">Empower Your Brand</h4>
+          <h1 class="text-6xl font-bold text-white">Elevate Your Business <br> with Expert Website Consulting</h1>
+          <p class="text-gray-300 leading-relaxed">
+              Transform your online presence with expert website consulting. We provide tailored strategies and designs to drive your business's growth. Let's build your digital future together.
+          </p>
+          <a href="#" class="inline-block bg-[#BDE162] text-blue-900 font-semibold px-6 py-3 rounded hover:bg-lime-500 transition">
+              Know More
+          </a>
+      </div>
+
+      <!-- Image Section -->
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
+          <img src="./assets/heroimg.avif" alt="">
+      </div>
+  </div>
+</section>
+
+<section class="flex flex-col md:flex-row items-start md:items-center justify-between p-6 md:p-12 lg:p-24 bg-[#EDF0F6]">
+  <!-- Left Side: Heading -->
+  <div class="mb-4 md:mb-0">
+    <p class="text-sm uppercase text-gray-500 font-semibold">Business Consulting</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">What services do we offer <br class="hidden md:block"> for your business</h2>
+  </div>
+  
+  <!-- Right Side: Description and Link -->
+  <div class="text-gray-600 md:text-right">
+    <p class="mb-2">See how our tailored solutions can boost your business.<br> From planning to support, we provide the expertise to drive<br> your success.</p>
+    <a href="#" class="text-blue-600 font-semibold hover:underline">All services</a>
+  </div>
+</section>
+
+<div class="cards bg-[#EDF0F6]">
+  <div class="container mx-auto p-4 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Card 1 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="p-2 rounded-full">
+                <img src="./assets/card1.svg" alt="">
+            </div>
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Business Website Audit</h2>
+        <p class="text-gray-600 mb-4">Assess your website’s performance and provide improvement recommendations.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="bp-2 rounded-full">
+                <img src="./assets/card2.svg" alt="">
+            </div>
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Strategic Website Planning</h2>
+        <p class="text-gray-600 mb-4">Create a strategy to align your website with business goals and audience needs.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="p-2 rounded-full">
+                <img src="./assets/card3.svg" alt="">
+            </div>
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Competitive Analysis</h2>
+        <p class="text-gray-600 mb-4">Review competitors’ sites to uncover opportunities for differentiation.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="p-2 rounded-full">
+               <img src="./assets/card4.svg" alt="">
+            </div>  
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Conversion Rate Optimization</h2>
+        <p class="text-gray-600 mb-4">Enhance design and functionality to boost user engagement and conversions.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="p-2 rounded-full">
+                <img src="./assets/card5.svg" alt="">
+            </div>
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Brand Positioning and Messaging</h2>
+        <p class="text-gray-600 mb-4">Develop content and visuals to clearly communicate your brand’s value.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+            <div class="p-2 rounded-full">
+                <img src="./assets/card2.svg" alt="">
+            </div>
+        </div>
+        <h2 class="text-3xl text-black font-semibold">Website Analytics and Reporting</h2>
+        <p class="text-gray-600 mb-4">Develop content and visuals to clearly communicate your brand’s value.</p>
+        <button class="text-blue-500 font-semibold">Details →</button>
+    </div>
+</div>
+
+</div>
+
+    <div class="count bg-white flex items-center justify-center">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-wrap justify-around gap-8 text-center">
+            <div class="flex flex-col">
+                <p class="text-3xl md:text-4xl font-bold text-gray-900">100+</p>
+                <p class="text-sm md:text-base text-gray-500">Projects Completed</p>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-3xl md:text-4xl font-bold text-gray-900">95%</p>
+                <p class="text-sm md:text-base text-gray-500">Client Satisfaction</p>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-3xl md:text-4xl font-bold text-gray-900">$50M+</p>
+                <p class="text-sm md:text-base text-gray-500">Revenue Generated</p>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-3xl md:text-4xl font-bold text-gray-900">90%</p>
+                <p class="text-sm md:text-base text-gray-500">Project Success Rate</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between max-w-7xl mx-auto p-6 space-y-6 lg:space-y-0 lg:space-x-8">
+      <!-- Left Section (Image with people) -->
+      <div class="lg:w-1/2 flex justify-center lg:justify-start">
+        <img src="./assets/advice.avif" alt="">
+      </div>
+  
+      <!-- Right Section (Text content) -->
+      <div class="lg:w-1/2 space-y-4">
+        <h2 class="text-3xl lg:text-5xl font-bold leading-tight">Focused Strategies for Financial Success and Growth</h2>
+        <ul class="space-y-4">
+          <li>
+            <h3 class="text-2xl font-semibold flex items-center">
+              <span class="text-green-400 mr-2"><img src="./assets/arrow.svg" alt=""></span> Strategic Growth Planning
+            </h3>
+            <p class="text-gray-400">Tailored strategies to boost your business's financial performance.</p>
+          </li>
+          <li>
+            <h3 class="text-2xl font-semibold flex items-center">
+              <span class="text-green-400 mr-2"><img src="./assets/arrow.svg" alt=""></span> Expert Financial Insights
+            </h3>
+            <p class="text-gray-400">Access to in-depth analysis and recommendations from industry specialists.</p>
+          </li>
+          <li>
+            <h3 class="text-2xl font-semibold flex items-center">
+              <span class="text-green-400 mr-2"><img src="./assets/arrow.svg" alt=""></span> Optimized Investment Strategies
+            </h3>
+            <p class="text-gray-400">Expert guidance on investments to maximize returns and minimize risks.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="sector bg-white text-gray-800">
+      <div class="max-w-7xl mx-auto p-6">
+        <!-- Section Header -->
+        <div class="mb-6 text-left">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase">Sectors</h3>
+          <h2 class="text-3xl font-bold text-gray-900">Our Expertise Across Various Economic Sectors</h2>
+        </div>
+    
+        <!-- Grid Layout for Sectors -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec1.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Technology</span>
+            </div>
+          </div>
+          
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec2.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Healthcare</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec3.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Financial Services</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec4.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Manufacturing</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec5.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Retail</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec6.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Energy</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec7.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Real Estate</span>
+            </div>
+          </div>
+    
+          <!-- Sector Card -->
+          <div class="relative group">
+            <img src="./assets/sec8.avif" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+              <span class="text-white text-lg font-semibold">Education</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="solution bg-[#203050] text-white">
+      <div class="max-w-7xl mx-auto p-6">
+        <!-- Main Container -->
+        <div class="flex flex-col lg:flex-row items-center rounded-lg overflow-hidden">
+          <!-- Text Content -->
+          <div class="p-8 lg:w-1/2 text-center lg:text-left">
+            <p class="text-lime-400 text-sm font-semibold uppercase">Solution</p>
+            <h2 class="text-3xl font-bold mt-2 mb-4">Cutting-Edge Solutions for Modern Enterprises</h2>
+            <p class="text-gray-300 mb-6">
+              Delivering innovative strategies and advanced solutions to ensure success in today’s evolving business landscape. Empowering enterprises with the tools to stay ahead of the curve.
+            </p>
+            <a href="#" class="inline-block bg-lime-400 text-gray-900 font-semibold py-3 px-6 rounded-md hover:bg-lime-500">
+              Get In Touch
+            </a>
+          </div>
+          
+          <!-- Image Section -->
+          <div class="lg:w-1/2">
+            <div class="flex items-center justify-center h-64 lg:h-full">
+              <img src="./assets/man.jpg" alt="Professional" class="h-[416px] w- object-cover rounded-lg shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+<!-- Blog Section -->
+<!-- <section class="bg-[#EDF0F6] py-12 px-4 md:px-8 lg:px-16"> -->
+
+<!-- Blog Section -->
+<section class="bg-[#EDF0F6] py-12 px-4 md:px-8 lg:px-16">
+  <!-- Title -->
+  <div class="text-center mb-10">
+      <h2 class="text-sm uppercase text-gray-500">Blogs</h2>
+      <h1 class="text-3xl font-bold text-gray-800">Latest blogs</h1>
+  </div>
+
+  <!-- Blog Grid -->
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Blog Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./assets/blog1.jpg" alt="Blog Image 1" class="w-full h-64 object-cover">
+          <div class="p-4">
+              <p class="text-sm text-gray-500 mb-2">20.10.2024</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Zeal Consulting Expands Services with New Sustainability Consulting Division</h3>
+              <a href="#" class="text-blue-500 hover:underline flex items-center">Read more &rarr;</a>
+          </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./assets/blog2.jpg" alt="Blog Image 2" class="w-full h-64 object-cover">
+          <div class="p-4">
+              <p class="text-sm text-gray-500 mb-2">15.10.2024</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Upcoming Webinar: Leveraging Data Analytics for Business Growth</h3>
+              <a href="#" class="text-blue-500 hover:underline flex items-center">Read more &rarr;</a>
+          </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./assets/blog3.jpg" alt="Blog Image 3" class="w-full h-64 object-cover">
+          <div class="p-4">
+              <p class="text-sm text-gray-500 mb-2">10.10.2024</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Zeal Consulting Achieves ISO 9001 Certification for Quality Management</h3>
+              <a href="#" class="text-blue-500 hover:underline flex items-center">Read more &rarr;</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Logo Section -->
+<section class="bg-white py-12 px-4 md:px-8 lg:px-16 bg-white">
+  <div class="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-20">
+      <!-- Logo 1 -->
+      <img src="./assets/lgo1.svg" alt="Logo 1" class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+      <!-- Logo 2 -->
+      <img src="./assets/lgo2.svg" alt="Logo 2" class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+      <!-- Logo 3 -->
+      <img src="./assets/lgo3.svg" alt="Logo 3" class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+      <!-- Logo 4 -->
+      <img src="./assets/lgo4.svg" alt="Logo 4" class="h-10 w-auto opacity-75 hover:opacity-100 transition-opacity">
+  </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-4 md:px-8 lg:px-16">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Logo and Description -->
+          <div>
+              <div class="flex items-center mb-4">
+                  <img src="./assets/logo.svg" alt="">
+              </div>
+              <p class="text-sm mb-4">Expert guidance tailored to your business needs, driving growth and innovation.</p>
+              <h3 class="text-sm font-semibold text-white mb-2">Subscribe Us</h3>
+              <!-- Social Media Icons -->
+              <div class="flex space-x-3">
+                  <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-[#BDE162]"><i class="fa-brands fa-facebook-f"></i></i></a>
+                  <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-[#BDE162]"><i class="fab fa-twitter text-white"></i></a>
+                  <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-[#BDE162]"><i class="fab fa-instagram text-white"></i></a>
+              </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div>
+              <h3 class="text-sm font-semibold text-white mb-4">Useful links</h3>
+              <ul class="space-y-2">
+                  <li><a href="#" class="hover:text-green-500">Home</a></li>
+                  <li><a href="#" class="hover:text-green-500">About</a></li>
+                  <li><a href="#" class="hover:text-green-500">Services</a></li>
+                  <li><a href="#" class="hover:text-green-500">Blogs</a></li>
+                  <li><a href="#" class="hover:text-green-500">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact and Newsletter -->
+          <div>
+              <h3 class="text-sm font-semibold text-white mb-4">Subscribe for our newsletter</h3>
+              <form class="flex items-center mb-6">
+                  <input type="email" placeholder="Your email" class="p-2 flex-grow bg-gray-800 text-gray-400 rounded-l">
+                  <button class="p-2 bg-[#BDE162] text-black rounded-r">Subscribe</button>
+              </form>
+              <h3 class="text-sm font-semibold text-white mb-4">Address</h3>
+              <p class="text-sm">1234 Innovation Drive<br>Suite 567 Cityville, State 89012 Country</p>
+              <h3 class="text-sm font-semibold text-white mt-4">Email</h3>
+              <p class="text-sm"><a href="mailto:info@zealconsult.com" class="hover:text-green-500">info@zealconsult.com</a></p>
+              <h3 class="text-sm font-semibold text-white mt-4">Phone</h3>
+              <p class="text-sm"><a href="tel:+18005551234" class="hover:text-green-500">+1 (800) 555-1234</a></p>
+          </div>
+      </div>
+  </footer>
+
+
+ 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
+<script>
+  jQuery.noConflict();
+  jQuery(document).ready(function($) {
+      $("#menu-toggle").click(function() {
+          $("#mobile-menu").toggleClass("hidden");
+      });
+  });
+</script>
+
+</body>
+</html>

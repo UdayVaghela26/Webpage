@@ -381,23 +381,25 @@
           </footer>
                
 
-  <!-- Script to toggle mobile menu -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-     <script>
-      function toggleFAQ(element) {
-        const parent = element.parentElement;
-        parent.classList.toggle('open');
-  
-        const icon = parent.querySelector('span');
-        icon.textContent = parent.classList.contains('open') ? '-' : '+';
-      }
-    </script>
+ 
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+        $("#menu-btn").click(function(){
+            $("#mobile-menu").toggleClass("hidden");
+        });
+    });
+</script>
+
+<script>
+  function toggleFAQ(element) {
+    const parent = element.parentElement;
+    parent.classList.toggle('open');
+
+    const icon = parent.querySelector('span');
+    icon.textContent = parent.classList.contains('open') ? '-' : '+';
+  }
+</script>
 </html>
