@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gearz cars site</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./assets/logo.svg" alt="Gearz Logo" class="h-[16px] w-auto mr-3">
+                
+            </div>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-gray-900">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Our Story</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Collection</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Blogs</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Reviews</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+            </div>
+
+            <!-- Icons and Search -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-gray-700 hover:text-gray-900">
+                    <img src="./assets/user.svg" alt="">
+                </a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">
+                    <img src="./assets/cart.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="md:hidden flex items-center">
+                <button onclick="toggleMenu()" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Shop</a>
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Our Story</a>
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Collection</a>
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Blogs</a>
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Reviews</a>
+                <a href="#" class="block text-gray-700 hover:text-gray-900">Contact</a>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Explore Gearz</a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Profile</a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Cart</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/heroimg.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-12 md:py-24 lg:py-32 flex flex-col justify-between h-full">
+            <!-- Text Content -->
+            <div class="text-white max-w-lg space-y-4">
+                <p class="text-lg md:text-xl">Custom Cruise</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Throttle Position Sensor</h1>
+                <p class="text-sm md:text-lg">
+                    This data is crucial for the ECU/PCM to determine the appropriate fuel injection and ignition timing for optimal engine performance and fuel efficiency. Essentially, the TPS provides real-time feedback to the vehicle's computer system.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md">View Collection</a>
+                    <a href="#" class="text-white underline hover:text-gray-300">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Icon Section -->
+            <div class="flex justify-center md:justify-start space-x-4 mt-12 md:mt-0 text-white">
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon1.svg" alt="Tires Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">TIRES</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon2.svg" alt="Engine Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">ENGINE</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon3.svg" alt="Battery Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">BATTERY</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon4.svg" alt="Oil Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">OIL</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon5.svg" alt="Brake Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">BRAKE</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./assets/icon6.svg" alt="Diagnostics Icon" class="h-8 w-8 mb-1">
+                    <p class="text-sm">DIAGNOSTICS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+        <div class="max-w-6xl mx-auto p-6">
+            <h1 class="text-3xl font-semibold text-gray-800 mb-6">Browse by Categories</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <!-- Engine Components -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <img src="./assets/categories1.jpg" alt="Engine Components" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Engine Components</h2>
+                <p class="text-gray-500">Get 20% off</p>
+                <a href="#" class="text-black font-medium hover:underline">Shop Now →</a>
+            </div>
+            
+            <!-- Car Tires -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <img src="./assets/categories2.jpg" alt="Car Tires" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Car Tires</h2>
+                <p class="text-gray-500">15% off only Today</p>
+                <a href="#" class="text-black font-medium hover:underline">Shop Now →</a>
+            </div>
+            
+            <!-- Spare Parts -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <img src="./assets/categories3.jpg" alt="Spare Parts" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Spare Parts</h2>
+                <p class="text-gray-500">Get 16% off</p>
+                <a href="#" class="text-black font-medium hover:underline">Shop Now →</a>
+            </div>
+            
+            <!-- Electrical System -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <img src="./assets/categories4.jpg" alt="Electrical System" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Electrical System</h2>
+                <p class="text-gray-500">Save 25%</p>
+                <a href="#" class="text-black font-medium hover:underline">Shop Now →</a>
+            </div>
+            
+            <!-- Suspension & Steering -->
+            <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                <img src="./assets/categories5.jpg" alt="Suspension & Steering" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Suspension & Steering</h2>
+                <p class="text-gray-500">Sale 32% off</p>
+                <a href="#" class="text-black font-medium hover:underline">Shop Now →</a>
+            </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+            <a href="#" class="text-gray-500 font-medium hover:underline">VIEW ALL →</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <div class="max-w-6xl mx-auto p-6 relative">
+            <!-- View All Button positioned in the top-right corner -->
+            
+            <h1 class="text-3xl font-semibold text-gray-800 mb-6">Featured Products</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <!-- Product Card 1 -->
+              <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+                <img src="./assets/featured1.jpg" alt="Wheel Bearing" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Wheel Bearing</h2>
+                <p class="text-gray-500">$120.00 USD</p>
+              </div>
+              
+              <!-- Product Card 2 -->
+              <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+                <img src="./assets/featured2.jpg" alt="Brake Pads" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Brake Pads</h2>
+                <p class="text-gray-500">$160.00 USD</p>
+              </div>
+              
+              <!-- Product Card 3 with discounted price -->
+              <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+                <img src="./assets/featured3.jpg" alt="Spark Plugs" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Spark Plugs</h2>
+                <p class="text-red-500 font-semibold">$115.00 USD <span class="text-gray-400 line-through">$130.00 USD</span></p>
+              </div>
+              
+              <!-- Product Card 4 -->
+              <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+                <img src="./assets/featured4.jpg" alt="Radiator Hose" class="mx-auto mb-4">
+                <h2 class="text-lg font-medium text-gray-700">Radiator Hose</h2>
+                <p class="text-gray-500">$198.00 USD</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="bg-gray-100 flex items-center justify-center p-4">
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
+    
+            <!-- Card 1 -->
+            <div class="relative bg-green-100 rounded-lg overflow-hidden p-6 flex flex-col justify-between bg-cover bg-center" style="background-image: url('./assets/greencar.jpg');">
+              <div>
+                <p class="text-sm font-medium text-gray-700">Get 45% Off</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Instrument cluster</h2>
+              </div>
+              <a href="#" class="text-black font-medium mt-4">Shop Now </a>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="relative bg-yellow-100 rounded-lg overflow-hidden p-6 flex flex-col justify-between bg-cover bg-center" style="background-image: url('./assets/yellowcar.jpg');">
+              <div>
+                <p class="text-sm font-medium text-gray-700">New Product</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Fuel pressure regulator</h2>
+              </div>
+              <a href="#" class="text-black font-medium mt-4">Shop Now </a>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="relative bg-red-100 rounded-lg overflow-hidden p-6 flex flex-col justify-between bg-cover bg-center" style="background-image: url('./assets/orangecar.jpg');">
+              <div>
+                <p class="text-sm font-medium text-gray-700">New Arrivals</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Fuel pressure regulator</h2>
+                <p class="text-gray-700 mt-2">The regulator ensures proper fuel atomization and distribution, optimizing engine performance.</p>
+              </div>
+              <a href="#" class="text-white bg-red-600 py-2 px-4 rounded font-medium mt-4 inline-block">Starting From $89.40 USD</a>
+            </div>
+        
+          </div>
+    </section>
+
+    <section class="bg-gray-100 p-4">
+        <div class="max-w-7xl mx-auto py-12">
+    
+            <!-- Feature Cards Container -->
+            <div class="bg-blue-50 rounded-lg py-8 px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+              
+              <!-- Feature Card 1 -->
+              <div class="flex flex-col items-center">
+                <div class="bg-white p-4 rounded-full mb-4 shadow-md">
+                  <img src="./assets/freeshipping.svg" alt="Free Shipping Icon" class="w-12 h-12">
+                </div>
+                <h3 class="font-semibold text-lg">Free Shipping</h3>
+                <p class="text-gray-500">You will love at great low prices</p>
+              </div>
+              
+              <!-- Feature Card 2 -->
+              <div class="flex flex-col items-center">
+                <div class="bg-white p-4 rounded-full mb-4 shadow-md">
+                  <img src="./assets/payment.svg" alt="Flexible Payment Icon" class="w-12 h-12">
+                </div>
+                <h3 class="font-semibold text-lg">Flexible Payment</h3>
+                <p class="text-gray-500">Pay with Multiple Credit Cards</p>
+              </div>
+              
+              <!-- Feature Card 3 -->
+              <div class="flex flex-col items-center">
+                <div class="bg-white p-4 rounded-full mb-4 shadow-md">
+                  <img src="./assets/delivery.svg" alt="Fast Delivery Icon" class="w-12 h-12">
+                </div>
+                <h3 class="font-semibold text-lg">Fast Delivery</h3>
+                <p class="text-gray-500">Experience the joy of fast shipping</p>
+              </div>
+              
+              <!-- Feature Card 4 -->
+              <div class="flex flex-col items-center">
+                <div class="bg-white p-4 rounded-full mb-4 shadow-md">
+                  <img src="./assets/support.svg" alt="Premium Support Icon" class="w-12 h-12">
+                </div>
+                <h3 class="font-semibold text-lg">Premium Support</h3>
+                <p class="text-gray-500">Outstanding premium support</p>
+              </div>
+              
+            </div>
+            
+          </div>
+    </section>
+
+    <section class="bg-gray-100 p-4">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Title -->
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Happy Customers</h2>
+        
+            <!-- Testimonial Card -->
+            <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-md overflow-hidden">
+              
+              <!-- Image Section -->
+              <div class="w-full lg:w-1/2">
+                <img src="./assets/customer.jpg" alt="Car Image" class="w-full h-full object-cover">
+              </div>
+              
+              <!-- Text Section -->
+              <div class="w-full lg:w-1/2 p-6 flex flex-col justify-between">
+                <div class="flex flex-col space-y-4">
+                  <!-- Star Rating -->
+                  <div class="flex items-center">
+                    <span class="text-red-500 text-lg mr-1">★★★★</span>
+                    <span class="text-gray-300 text-lg">★</span>
+                  </div>
+                  <!-- Testimonial Text -->
+                  <p class="text-gray-700 text-lg">“I recently replaced my worn-out wiper blades with ones I found on Gearz. The discounted price caught my attention & the quality exceeded my expectations. They installed easily and provide excellent visibility in all weather conditions.”</p>
+                </div>
+                
+                <!-- Customer Info -->
+                <div class="flex items-center mt-4">
+                  <img src="./assets/customerprofile.jpg" alt="User Avatar" class="w-10 h-10 rounded-full mr-3">
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Wade Warren</h4>
+                    <p class="text-gray-500 text-sm">Miami, USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+    </section>
+
+    <section class="p-4">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Title with View All -->
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-semibold text-gray-800">News & Articles</h2>
+              <a href="#" class="text-gray-500 text-sm hover:text-gray-800">VIEW ALL →</a>
+            </div>
+        
+            <!-- Articles Grid -->
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        
+              <!-- Article Card 1 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/article1.jpg" alt="Article 1 Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-500 mb-1">Maintenance Matters • Apr 5, 2024</p>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">The impact of suspension upgrades on ride quality</h3>
+                  <a href="#" class="text-black text-sm font-semibold flex items-center hover:underline">Read Article <img src="./assets/arrow.svg" alt="">
+                  </a>
+                </div>
+              </div>
+        
+              <!-- Article Card 2 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/article2.jpg" alt="Article 2 Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-500 mb-1">Car Chronicles • Apr 5, 2024</p>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Choosing the best wiper blades for your driving needs</h3>
+                  <a href="#" class="text-black text-sm font-semibold flex items-center hover:underline">Read Article  <img src="./assets/arrow.svg" alt=""></a>
+                </div>
+              </div>
+        
+              <!-- Article Card 3 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./assets/article3.jpg" alt="Article 3 Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <p class="text-xs text-gray-500 mb-1">Performance Pointers • Apr 5, 2024</p>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Navigating the world of synthetic vs. conventional motor oil</h3>
+                  <a href="#" class="text-black text-sm font-semibold flex items-center hover:underline">Read Article  <img src="./assets/arrow.svg" alt=""></a>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+    </section>
+
+    <section class="p-6">
+        <div class="max-w-7xl mx-auto py-16">
+
+            <!-- Container for Flex Layout -->
+            <div class="flex flex-col lg:flex-row bg-gray-50 rounded-lg overflow-hidden shadow-md">
+        
+              <!-- Left Section: Content and Brand Logos -->
+              <div class="p-8 lg:w-1/2 bg-gray-100">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Trusted Automotive Brands</h2>
+                <p class="text-gray-600 mb-6">Discover trusted brands renowned for quality, reliability, and innovation in the automotive industry.</p>
+                <a href="#" class="text-gray-500 text-sm font-semibold flex items-center hover:underline mb-8">Explore Categories →</a>
+        
+                <!-- Brand Logos -->
+                <div class="flex space-x-6">
+                  <!-- Replace the SVG or image URLs with your actual logos -->
+                  <div class="flex items-center">
+                    <img src="./assets/brand1.svg" alt="Hourglass Logo" class="mr-2">
+                  </div>
+                  <div class="flex items-center">
+                    <img src="./assets/brand2.svg" alt="Capsule Logo" class="mr-2">
+                  </div>
+                  <div class="flex items-center">
+                    <img src="./assets/brand3.svg" alt="Lightbox Logo" class="mr-2">
+                  </div>
+                  <div class="flex items-center">
+                    <img src="./assets/brand4.svg" alt="Spherule Logo" class="mr-2">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Right Section: Newsletter Subscription -->
+              <div class="relative lg:w-1/2 h-64 lg:h-auto bg-cover bg-center" style="background-image: url('./assets/subscribbgimg.jpg');">
+                <div class="absolute inset-0 bg-black opacity-40"></div> <!-- Overlay -->
+        
+                <div class="relative z-10 p-8 lg:p-16">
+                  <h3 class="text-white text-lg font-semibold mb-2">Subscribe to our newsletter</h3>
+                  <p class="text-white text-2xl font-semibold mb-6">Experience top-notch car auto services & repairs today.</p>
+        
+                  <!-- Subscription Form -->
+                  <form class="flex">
+                    <input type="email" placeholder="Email address" class="p-3 w-full rounded-l-lg focus:outline-none">
+                    <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-r-lg font-semibold hover:bg-red-700">Submit</button>
+                  </form>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+    </section>
+
+    <footer class="bg-black text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between space-y-10 lg:space-y-0">
+              
+              <!-- Left Section: Company Info -->
+              <div class="lg:w-1/3">
+                <h2 class="text-2xl font-semibold text-white">Gearz</h2>
+                <p class="mt-2 text-sm">Gearz Autoparts pvt.ltd</p>
+                <p class="mt-4 text-gray-400">We are dedicated to providing automotive enthusiasts and everyday drivers alike with a comprehensive solution.</p>
+                <p class="mt-4 text-gray-400">info@example.com</p>
+              </div>
+      
+              <!-- Center Section: Contact Info -->
+              <div class="lg:w-1/3">
+                <h3 class="text-lg font-semibold text-white">Need Help?</h3>
+                <p class="mt-2">+1 (239) 555-0108</p>
+                <p class="mt-2 text-gray-400">Monday to Friday — 9AM - 5PM</p>
+                <p class="mt-2 text-gray-400">Saturday & Sunday only 10AM to 12PM.</p>
+                <p class="mt-4 text-gray-400">support@example.com</p>
+              </div>
+      
+              <!-- Right Section: Links -->
+              <div class="flex flex-col lg:flex-row lg:w-1/3 justify-between space-y-10 lg:space-y-0">
+      
+                <!-- Pages Links -->
+                <div>
+                  <h3 class="text-lg font-semibold text-white">Pages</h3>
+                  <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="hover:text-gray-500">About us</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Categories</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Shop</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Blogs</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Review</a></li>
+                    <li><a href="#" class="hover:text-gray-500">FAQ</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Our Store</a></li>
+                  </ul>
+                </div>
+      
+                <!-- Resources Links -->
+                <div>
+                  <h3 class="text-lg font-semibold text-white">Resources</h3>
+                  <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="hover:text-gray-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Return Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-gray-500">License</a></li>
+                  </ul>
+                </div>
+      
+                <!-- Social Links -->
+                <div>
+                  <h3 class="text-lg font-semibold text-white">Social</h3>
+                  <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="hover:text-gray-500">Instagram</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Facebook</a></li>
+                    <li><a href="#" class="hover:text-gray-500">Twitter</a></li>
+                    <li><a href="#" class="hover:text-gray-500">YouTube</a></li>
+                  </ul>
+                </div>
+      
+              </div>
+            </div>
+      
+            <!-- Bottom Section: Copyright -->
+            <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col lg:flex-row items-center justify-between text-gray-400 text-sm">
+              <p>© 2024 Gear.</p>
+              <p>Designed by Nixar. Powered by Webflow.</p>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
